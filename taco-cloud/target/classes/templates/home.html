@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Taco Cloud App</title>
+</head>
+<body>
+
+    <h1>Witaj w ...</h1>
+    <img th:src="@{/images/TacoCloud.png}"/>
+    <nav class="container">
+        <a th:href="@{/}" id="home">Home</a>
+        <a th:href="@{/design}" id="design">Design</a>
+        <form method="post" th:action="@{/logout}">
+            <input type="submit" value="Logout"/>
+        </form>
+
+    </nav>
+</body>
+</html>
